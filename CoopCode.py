@@ -1,15 +1,17 @@
 
-num = int(input())
-has_seven = False
+n = int(input())
+count = 1
+max_number = 0
 
-while num != 0:
-    last_dig = num % 10
+while n != 0:
+    number = n % 10
+    number1 = n % 10
 
-    if last_dig == 7:
-        has_seven = True
-    num = num // 10
+    if number > count:
+        max_number = number
 
-if has_seven == True:
-    print("a")
-else:
-    print("b")
+print(max_number)
+
+
+
+
